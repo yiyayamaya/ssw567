@@ -10,7 +10,7 @@ def classify_triangle(side_a, side_b, side_c):
 
     res = ""
     for side in (side_a, side_b, side_c):
-        if not isinstance(side, float, int):
+        if not isinstance(side, (float, int)):
             return "invalid input"
 
     input_list = [side_a, side_b, side_c]
@@ -21,15 +21,20 @@ def classify_triangle(side_a, side_b, side_c):
 
     if side_a <= 0 or side_b <= 0 or side_c <= 0:
         res = "invalid input"
-    if side_a + side_b <= side_c:
-        res = "NotATriangle"
-    if side_a ** 2 + side_b ** 2 == side_c ** 2:
-        res = 'Right'
-    if side_a == side_b and side_b == side_c:
-        res = 'Equilateral'
-    if side_b in (side_a, side_c):
-        res = "isosceles"
-    res = "scalene"
+    else:
+        if side_a + side_b <= side_c:
+            res = "NotATriangle"
+        else:
+            if side_a ** 2 + side_b ** 2 == side_c ** 2:
+                res = 'Right'
+            else:
+                if side_a == side_b and side_b == side_c:
+                    res = 'Equilateral'
+                else:
+                    if side_b in (side_a, side_c):
+                        res = "isosceles"
+                    else:
+                        res = "scalene"
 
     return res
 class TestTriangles(unittest.TestCase):
