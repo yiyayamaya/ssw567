@@ -8,8 +8,7 @@ pylint
 coverage
 
 - Identify both your original test cases and new test cases that you created to achieve at least 80% code coverage.  
-my original test cases arrive at 100% percent code coverage. So I did not create new test cases.![avatar](./coverage.png)
-
+my original test cases arrive at 100% percent code coverage. So I did not create new test cases.
 
 - Attach screen shots of the output of the static code analyzer as well as code coverage.  You should show a screen shot of the analysis results both before and after any changes that you make to your programs:
 ![avatar](./before.png)
