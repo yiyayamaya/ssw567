@@ -15,8 +15,9 @@ passW0rD
 
 - Describe in your own words how you attacked this "site" to reveal the internal information  
   SQL injection
-  - What would you do to prevent this attack in your websites?  
-  use Queries with parameter. in JDBC we use PreparedStatement "select * from stu where name=?"
+
+- What would you do to prevent this attack in your websites?  
+use Queries with parameter. in JDBC we use PreparedStatement "select * from stu where name=?"
  
 
 
@@ -24,7 +25,6 @@ passW0rD
 ### part 2:
 
 - List and describe all of the "high risk" alerts that ZAP identifies with your local instance of WebGoat. 
-  I did not find any high risk. I don't know why. I follow the guide step by step. Every thing looks fine but no high risk.
-![avatar](./2.png)
+  I did not find any high risk. I don't know why. I follow the guide step by step. Every thing looks fine but no high risk.![avatar](./2.png)
 
 - Include a screen dump of the ZAP window after you have completed the scan in your report.![avatar](./3.png)
